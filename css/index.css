@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+.top_bg {
+  background-image: url("../img/top.png");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.top_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: white;
+  letter-spacing: 10px;
+
+}
+
+.top_text {
+  position: absolute;
+  top: 63%;
+  /* 上から75%の位置（適宜調整） */
+  left: calc(50% + 100px);
+  /* 左から50%の位置に100px加算した値 */
+  color: white;
+  font-weight: 50;
+  font-size: 40px;
+}
+
+.top_right {
+  position: absolute;
+  top: 55%;
+  right: 8%;
+  font-size: xx-large;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_list li+li {
+  margin-top: 40%;
+  /* 最初のli以外に左マージンを追加 */
+}
+
+.about_items {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.nav_link {
+  color: black;
+}
+
+.section {
+  margin-top: 60px;
+}
+
+.section_title {
+  text-align: center;
+  /* テキストを中央寄せ */
+  display: flex;
+  justify-content: center;
+  /* 子要素を水平中央寄せ */
+  align-items: center;
+  /* 子要素を垂直中央寄せ */
+  margin-bottom: 50px;
+  /* 親要素に全画面の高さを指定 */
+}
+
+.section_title h2 {
+  margin: 10px;
+  /* h2要素の余白をリセット */
+  font-size: xx-large;
+}
+
+hr {
+  display: block;
+}
+
+.profile_items {
+  display: flex;
+  /* Flexbox を利用 */
+  justify-content: center;
+}
+
+.profile_left {
+  width: 40%;
+}
+
+.profile_img {
+  width: 90%;
+  /* 幅を20%に指定 */
+  height: auto;
+  /* 高さは自動調整 */
+  object-fit: cover;
+  /* 画像が要素にぴったり収まるように表示 */
+  height: 300px;
+  /* 表示したい高さを指定 */
+}
+
+.profile_right {
+  width: 40%;
+}
+
+.about {
+  justify-content: center;
+  /* 子要素を中央寄せ */
+}
+
+.about_titile {
+  padding: 10px;
+  color: white;
+  font-size: x-large;
+}
+
+.about_list {
+  justify-content: center;
+  /* 子要素を中央寄せ */
+  margin-top: 20px;
+}
+
+.about_items {
+  display: flex;
+  /* Flexbox を利用 */
+  justify-content: center;
+  /* 子要素を中央寄せ */
+  text-align: center;
+  padding-top: 30px;
+  /* 子要素を垂直中央寄せ */
+  height: 700%;
+  position: relative;
+}
+
+.can_items {
+  display: flex;
+  /* Flexbox を利用 */
+  justify-content: center;
+  width: 60%;
+  align-items: center;
+  /* 子要素を垂直中央寄せ */
+  /* left: 50%; */
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+.about_img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.about_img_web {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.about_img_miyazaki {
+  width: 48%;
+  height: auto;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.can_text {
+  width: 50%;
+}
+
+.block {
+  width: 15%;
+  margin: 10px 30px;
+}
+
+.about_img {
+  width: 70%;
+}
+
+.about_titile {
+  text-align: center;
+}
+
+.can {
+  background-color: rgba(0, 0, 255, 0.200);
+}
+
+.practical {
+  background-color: rgba(255, 0, 0, 0.150);
+}
+
+.like {
+  background-color: rgba(0, 128, 0, 0.200);
+}
+
+.career {
+  background-color: rgba(255, 166, 0, 0.200);
+}
+
+.about_titile {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.works_items {
+  display: flex;
+  /* Flexbox を利用 */
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.works_item {
+  width: 25%;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.work_img {
+  width: 80%;
+  height: auto;
+  /* 高さは自動調整 */
+  object-fit: cover;
+  /* 画像が要素にぴったり収まるように表示 */
+  height: 300px;
+  /* 表示したい高さを指定 */
+}
+
+.contact {
+  background-color: #7b7b7b;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact_list {
+  /*要素の種類を指定 横並び*/
+  display: flex;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+}
+
+.contact_list li {
+  /*マーカーの設定（先頭の・など）*/
+  list-style: none;
+}
+
+.contact_item {
+  width: 60px;
+}
+
+.contact_mail {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bottom {
+  background-color: #333;
+}
+
+.bottom .inner {
+  padding: 30px;
+}
+
+.copyright {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
